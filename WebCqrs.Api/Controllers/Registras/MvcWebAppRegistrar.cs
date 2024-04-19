@@ -1,4 +1,5 @@
-﻿using WebCqrs.Api.Controllers.Registrar;
+﻿using Microsoft.AspNetCore.Mvc.ApiExplorer;
+using WebCqrs.Api.Controllers.Registrar;
 
 namespace WebCqrs.Api.Controllers.Registras
 {
@@ -6,8 +7,15 @@ namespace WebCqrs.Api.Controllers.Registras
     {
         public void RegisterPipelineComponents(WebApplication app)
         {
+            app.UseSwagger();
+            app.UseSwaggerUI(options => {
+                var provider = app.Services.GetRequiredService<IApiVersionDescriptionProvider>();
 
-            //app.UseHttpsRedirection();
+                foreach (var description in provider.ApiVersionDescriptions)
+                {
+                    options.SwaggerEndpoint($"/swagger/{description.GroupName}/swagger.json", description.ApiVersion.ToString());
+                }
+            });
 
             app.UseApiVersioning();
             app.UseAuthorization();
