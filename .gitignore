@@ -1,8 +1,3 @@
-.vs/ProjectEvaluation/webcqrs.metadata.v7.bin
 .vs/
-WebCqrs.Api/bin/
-WebCqrs.Api/obj/
-WebCqrs.Application/obj/
-WebCqrs.Dal/obj/
-WebCqrs.Domain/obj/
-WebCqrs/obj/
+**/bin/
+**/obj/ 
