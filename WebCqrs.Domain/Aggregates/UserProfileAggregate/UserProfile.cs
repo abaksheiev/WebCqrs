@@ -2,15 +2,27 @@
 {
     public class UserProfile
     {
-        public Guid UserProfileId { get; set; }
+        private UserProfile() { 
+            
+        }
+        public Guid UserProfileId { get; private set; }
+        public string IdentityId { get; private set; }
+        public BasicInfo BasicInfo { get; private set; }
+        public DateTime DateCreated { get; private set; }
+        public DateTime DateModified { get; private set; }
 
-        public string IdentityId { get; set; }
+        public static UserProfile CreateUserProfile(string idenityId, BasicInfo basicInfo) { 
 
-        public BasicInfo BasicInfo { get; set; }
-        public DateTime DateCreated { get; set; }
-        public DateTime DateModified { get; set; }
+            // TO DO: add validation, error handling strategies, error notification strategies
 
-        public string CurrentCity { get; set; }
-
+            var userProfile = new UserProfile() { 
+                IdentityId = idenityId,
+                BasicInfo = basicInfo,
+                DateCreated = DateTime.UtcNow,
+                DateModified = DateTime.UtcNow
+            };
+            
+            return userProfile;
+        }
     }
 }

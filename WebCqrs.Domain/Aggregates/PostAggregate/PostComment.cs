@@ -25,8 +25,17 @@ namespace WebCqrs.Domain.Aggregates.PostAggregate
             return new PostComment { 
                 PostId = postId, 
                 Text = text, 
-                UserProfileId = userProfileId 
+                UserProfileId = userProfileId,
+                DateCreated = DateTime.Now,
+                LastModified = DateTime.Now
             }; 
+        }
+
+        //public methods
+        public void UpdateCommentText(string text)
+        {
+            Text = text;
+            LastModified = DateTime.Now;
         }
     }
 }

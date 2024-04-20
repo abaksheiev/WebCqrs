@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using WebCqrs.Domain.Models;
+
 
 namespace WebCqrs.Api.Controllers.v1
 {
@@ -12,12 +12,7 @@ namespace WebCqrs.Api.Controllers.v1
         [Route("{id}")]
         public IActionResult GetById(int id)
         {
-            var post = new Post()
-            {
-                Id = id,
-                Text = "Hello, world!"
-            };
-            return Ok(post);
+            return Ok( );
         }
     }
 }
