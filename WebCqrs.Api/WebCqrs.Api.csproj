@@ -7,13 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="NewFolder\**" />
-    <Content Remove="NewFolder\**" />
-    <EmbeddedResource Remove="NewFolder\**" />
-    <None Remove="NewFolder\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="FluentAssertions" Version="6.12.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.1.0" />
@@ -27,8 +20,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\WebCqrs.Application\WebCqrs.Application.csproj" />
     <ProjectReference Include="..\WebCqrs.Dal\WebCqrs.Dal.csproj" />
     <ProjectReference Include="..\WebCqrs.Domain\WebCqrs.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Contracts\Posts\Requests\" />
+    <Folder Include="Contracts\Posts\Responses\" />
   </ItemGroup>
 
 </Project>

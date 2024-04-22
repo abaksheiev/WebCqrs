@@ -6,4 +6,21 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Posts\CommandHadlers\" />
+    <Folder Include="Posts\Commands\" />
+    <Folder Include="Posts\Queries\" />
+    <Folder Include="Posts\QueryHandlers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WebCqrs.Dal\WebCqrs.Dal.csproj" />
+    <ProjectReference Include="..\WebCqrs.Domain\WebCqrs.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

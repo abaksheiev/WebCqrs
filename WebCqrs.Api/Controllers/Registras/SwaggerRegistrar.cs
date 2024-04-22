@@ -1,7 +1,7 @@
 ﻿
 using WebCqrs.Api.Options;
 
-namespace WebCqrs.Api.Controllers.Registrar
+namespace WebCqrs.Api.Registrar
 {
     public class SwaggerRegistrar : IWebApplicationBuilderRegistrar
     {

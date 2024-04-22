@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.AspNetCore.Mvc;
-using WebCqrs.Api.Controllers.Registrar;
+using WebCqrs.Api.Registrar;
 
-namespace WebCqrs.Api.Controllers.Registras
+namespace WebCqrs.Api.Registras
 {
     public class MvcRegistrar : IWebApplicationBuilderRegistrar
     {

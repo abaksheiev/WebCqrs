@@ -1,11 +1,5 @@
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ApiExplorer;
-using Microsoft.AspNetCore.Mvc.Versioning;
-using Microsoft.OpenApi.Models;
-using Swashbuckle.AspNetCore.SwaggerGen;
-using System.Reflection;
-using WebCqrs.Api.Controllers.Extensions;
-using WebCqrs.Api.Options;
+using WebCqrs.Api.Extensions;
+using WebCqrs.Application.UserProfiles.Queries;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,10 +1,8 @@
-﻿using FluentAssertions.Common;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using WebCqrs.Api.Controllers.Registrar;
+﻿using Microsoft.EntityFrameworkCore;
+using WebCqrs.Api.Registrar;
 using WebCqrs.Dal;
 
-namespace WebCqrs.Api.Controllers.Registras
+namespace WebCqrs.Api.Registras
 {
     public class DbRegistrar : IWebApplicationBuilderRegistrar
     {

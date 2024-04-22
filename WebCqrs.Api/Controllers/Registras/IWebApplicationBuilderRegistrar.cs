@@ -1,6 +1,6 @@
 ﻿using WebCqrs.Api.Controllers.Registras;
 
-namespace WebCqrs.Api.Controllers.Registrar
+namespace WebCqrs.Api.Registrar
 {
     public interface IWebApplicationBuilderRegistrar : IRegistrar
     {

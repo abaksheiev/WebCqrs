@@ -24,6 +24,7 @@ namespace WebCqrs.Domain.Aggregates.UserProfileAggregate
         public static BasicInfo CreatedBasicInfo(
             string firstName,
             string lastName,
+            string emailAddress,
             string phone,
             DateTime dateOfBirth,
             string currentCity)
@@ -32,6 +33,7 @@ namespace WebCqrs.Domain.Aggregates.UserProfileAggregate
             {
                 FirstName = firstName,
                 LastName = lastName,
+                EmailAddress = emailAddress,
                 Phone = phone,
                 DateOfBirth = dateOfBirth,
                 CurrentCity = currentCity

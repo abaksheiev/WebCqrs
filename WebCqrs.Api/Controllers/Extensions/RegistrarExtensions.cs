@@ -1,10 +1,7 @@
-﻿using Microsoft.AspNetCore.Builder;
-using Swashbuckle.AspNetCore.SwaggerGen;
-using System.Runtime.CompilerServices;
-using WebCqrs.Api.Controllers.Registrar;
-using WebCqrs.Api.Controllers.Registras;
+﻿using WebCqrs.Api.Controllers.Registras;
+using WebCqrs.Api.Registrar;
 
-namespace WebCqrs.Api.Controllers.Extensions
+namespace WebCqrs.Api.Extensions
 {
 
     public static class RegistrarExtensions

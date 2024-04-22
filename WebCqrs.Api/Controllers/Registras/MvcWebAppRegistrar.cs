@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc.ApiExplorer;
-using WebCqrs.Api.Controllers.Registrar;
+using WebCqrs.Api.Registrar;
 
 namespace WebCqrs.Api.Controllers.Registras
 {
